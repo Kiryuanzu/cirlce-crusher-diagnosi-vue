@@ -7,16 +7,7 @@
 </head>
 <body>
   <div id="app">
-    <div v-show="question">
-    <p>家族との関係は良好だ</p>
-        <label><input type="radio" name="q01" class="typeA" value="1"/> あてはまる</label><br/>
-        <label><input type="radio" name="q01" class="typeA" value="2"/> どちらかかと言えばあてはまる</label><br/>
-        <label><input type="radio" name="q01" class="typeA" value="3"/>どちらかといえばあてはまらない</label><br/>
-        <label><input type="radio" name="q01" class="typeA" value="4"/> あてはまらない</label><br/>
-    </div>
-    <button v-on:click="ResultButton">
-      切り替える
-    </button>
+    <question></question>
   </div>
   <script
     src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
